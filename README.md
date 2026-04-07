@@ -122,7 +122,7 @@ Layer 4  人格合成    将骨架和灵魂编码为 System Prompt
 
 用户：[上传 chat_export.xlsx]
 
-我：收到。文件里有两个发送者：「Waver」和「叶棠」。
+我：收到。文件里有两个发送者：「Waver」和「Alice」。
    哪个是你？
 
 用户：Waver
