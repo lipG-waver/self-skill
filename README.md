@@ -1,10 +1,10 @@
 # 自己.skill
 
+**你以为你是一个人长大的。翻翻聊天记录才发现，你是被爱过你的人，一句一句改写的。**
+
 > *"如果 18 岁的我看到现在的自己，他会认出我吗？"*
 >
 > *——不会。但他会认出你说「好呀」时的语气。那是他暗恋的那个人教你的。*
-
-**你以为你是一个人长大的。翻翻聊天记录才发现，你是被爱过你的人，一句一句改写的。**
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 [![Python 3.9+](https://img.shields.io/badge/Python-3.9%2B-blue.svg)](https://python.org)
