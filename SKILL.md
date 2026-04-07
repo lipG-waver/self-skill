@@ -33,12 +33,6 @@ allowed-tools: Read, Write, Edit, Bash
 * `/compare {slug1} {slug2}`
 * "对比一下我两个时期的说话方式"
 
-骰子游戏触发：
-
-* `/dice` / `/骰子`
-* "掷骰子" / "玩骰子" / "骰子游戏"
-* "来一局" / "roll dice"
-
 ---
 
 ## 工具使用规则
@@ -54,7 +48,6 @@ allowed-tools: Read, Write, Edit, Bash
 | 编译 System Prompt | `Bash` → `python3 ${CLAUDE_SKILL_DIR}/tools/prompt_compiler.py` |
 | 写入/更新文件 | `Write` / `Edit` 工具 |
 | 版本管理与对比 | `Bash` → `python3 ${CLAUDE_SKILL_DIR}/tools/version_manager.py` |
-| 骰子游戏 | `Bash` → `python3 ${CLAUDE_SKILL_DIR}/tools/dice_game.py` |
 
 **基础目录**：Skill 文件写入 `./selves/{slug}/`。
 
@@ -292,35 +285,6 @@ selves/{slug}/
     ├── v1/
     └── v2/
 ```
-
----
-
-## 骰子游戏（对话式）
-
-参考 `${CLAUDE_SKILL_DIR}/prompts/dice_game.md`
-
-所有游戏选项以**对话文本**形式展示，用户通过回复数字或文字选择，不使用弹窗或悬浮菜单。
-
-### 启动
-
-```bash
-python3 ${CLAUDE_SKILL_DIR}/tools/dice_game.py menu
-```
-
-展示主菜单，包含 5 种模式：快速掷骰、自定义掷骰、猜大小、骰子决斗、幸运数字。
-
-### 交互规则
-
-1. 用户回复数字（1-5）选择模式
-2. 每次操作后自动给出"接下来做什么"的选项
-3. 支持自然语言输入（"再来一局"、"换个玩法"等）
-4. 用户说"不玩了"/"退出"时结束游戏
-
-### 设计原则
-
-- 选项用数字编号 + emoji 标记，降低输入成本
-- 每次结果后都附带后续选项，保持对话连贯
-- 纯文本交互，不依赖任何 UI 组件，避免选项被遮挡
 
 ---
 
